@@ -3,7 +3,8 @@
 def load_library(path)
   # code goes here
   require 'yaml'
-  emoticons =  
+  emoticons = YAML.load_file('emoticons.yml')
+  
   library = {:get_meaning => {}, :get_emoticon => {}}
 end
 
