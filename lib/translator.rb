@@ -9,7 +9,8 @@ def load_library(path)
   emoticons.each_pair do |key, value|
     library[:get_meaning][value[1]] = key
   end
-    
+  
+  return library
 end
 
 def get_japanese_emoticon
