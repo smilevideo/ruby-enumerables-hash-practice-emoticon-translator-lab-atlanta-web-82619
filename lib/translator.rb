@@ -18,7 +18,7 @@ def get_japanese_emoticon (path, emoticon)
   # code goes here
   library = load_library(path)
   
-  return 'asdf' if not library[:get_emoticon][emoticon]
+  return "Sorry, that emoticon was not found" if not library[:get_emoticon][emoticon]
     
   return library[:get_emoticon][emoticon]
 end
